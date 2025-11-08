@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pastel de Chocolate",
+    "precio": 25000,
+    "descripcion": "Intenso y cremoso pastel de chocolate con cobertura de ganache.",
+    "imagen": "https://d1bvpoagx8hqbg.cloudfront.net/originals/tarta-chocolate-ganache-b3fb28758f16632e22798ce06f06a80e.jpg",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 2,
+    "nombre": "Pastel de Fresa",
+    "precio": 30000,
+    "descripcion": "Fresco y ligero pastel con fresas naturales y crema batida.",
+    "imagen": "https://www.bettycrocker.lat/mx/wp-content/uploads/sites/2/2023/04/Strawberry-Frosted-Layer-Cake.jpg",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 3,
+    "nombre": "Pastel de Coco",
+    "precio": 34000,
+    "descripcion": "Pastel de coco con un toque de vainilla y coco rallado.",
+    "imagen": "https://wiltonenespanol.com/wp-content/uploads/2021/04/CoCaHa_43162-07-scaled.jpg",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 4,
+    "nombre": "Pastel de Vainilla",
+    "precio": 22000,
+    "descripcion": "Clásico y esponjoso pastel de vainilla con betún de mantequilla.",
+    "imagen": "https://pekis.net/sites/default/files/styles/325x325/public/2025-05/gluten_free_vanilla_cake.webp?itok=q7k2L0Pm",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 5,
+    "nombre": "Pastel Tres Leches",
+    "precio": 55000,
+    "descripcion": "Tradicional pastel bañado en tres tipos de leche con frutas.",
+    "imagen": "https://i.pinimg.com/originals/c1/8d/41/c18d4153b06f7c76cc8a2bd3992533d4.jpg",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 6,
+    "nombre": "Pastel de Limón",
+    "precio": 29000,
+    "descripcion": "Refrescante pastel de limón con un glaseado cítrico y dulce.",
+    "imagen": "https://peopleenespanol.com/thmb/XaIsKs0O5SDegdsax3HTQYYrHpI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7a4c52fa-b424-4308-b8fc-711baa709138-2000-bc7fd030b45e40408cb20f9408921b1a.jpg",
+    "categoria": "pasteles"
+  }
+]
