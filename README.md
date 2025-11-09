@@ -14,7 +14,7 @@ Nota importante: El sistema de login implementado es únicamente con fines educa
 
 El proyecto sigue una arquitectura modular bien definida con separación clara de responsabilidades:
 
-
+```
 reposteria_ari-ana/
 ├── db.json
 ├── public/
@@ -39,7 +39,7 @@ reposteria_ari-ana/
 │   ├── App.vue
 │   └── main.js
 └── README.md
-
+```
 
 ### Arquitectura de Componentes
 
@@ -54,7 +54,7 @@ Se implementaron cuatro componentes reutilizables:
 
 Se configuró Vue Router con un sistema de rutas hijas para mantener el layout del dashboard persistente:
 
-  javascript
+```javascript
 const routes = [
   {
     path: '/',
@@ -87,7 +87,7 @@ const routes = [
     ]
   }
 ]
-
+```
 
 ## Ejemplo de Consumo de la API Externa para Gestionar los Productos
 
@@ -99,7 +99,7 @@ Se implementó JSON Server como API REST simulada que proporciona endpoints comp
 
 #### GET - Obtener todos los productos
 
-  javascript
+```javascript
 async loadProducts() {
   try {
     const response = await fetch('http://localhost:3001/productos');
@@ -111,41 +111,41 @@ async loadProducts() {
     this.products = await localResponse.json();
   }
 }
-
+```
 
 #### POST - Crear nuevo producto
 
-javascript
+```javascript
 const response = await fetch('http://localhost:3001/productos', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(this.currentProduct)
 });
-
+```
 
 #### PUT - Actualizar producto existente
 
-javascript
+```javascript
 const response = await fetch(`http://localhost:3001/productos/${this.editingProduct.id}`, {
   method: 'PUT',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(this.currentProduct)
 });
-
+```
 
 #### DELETE - Eliminar producto
 
-javascript
+```javascript
 const response = await fetch(`http://localhost:3001/productos/${productId}`, {
   method: 'DELETE'
 });
-
+```
 
 ### Estructura de la API
 
 El archivo db.json contiene la estructura de datos para los productos de la repostería:
 
-json
+```json
 {
   "productos": [
     {
@@ -158,7 +158,7 @@ json
     }
   ]
 }
-
+```
 
 ## Ejemplo de Comunicación entre Componentes (Props y Eventos)
 
@@ -166,7 +166,7 @@ json
 
 ProductCardComponent.vue - Componente que recibe datos mediante props:
 
-vue
+```vue
 <template>
   <div class="card product-card h-100">
     <img :src="product.imagen" :alt="product.nombre" class="card-img-top">
@@ -201,11 +201,11 @@ export default {
   }
 }
 </script>
-
+```
 
 ProductsGridView.vue - Uso del componente con paso de props:
 
- vue
+```vue
 <template>
   <div class="row">
     <div v-for="product in products" :key="product.id" class="col-12 col-sm-6 col-lg-4 mb-4">
@@ -231,13 +231,13 @@ export default {
   }
 }
 </script>
-
+```
 
 ### Comunicación mediante Eventos
 
 SidebarComponent.vue - Emisión de eventos para logout:
 
-vue
+```vue
 <script>
 export default {
   methods: {
@@ -248,7 +248,7 @@ export default {
   }
 }
 </script>
-
+```
 
 ## Evidencia del Trabajo Colaborativo
 
@@ -298,24 +298,24 @@ El desarrollo se realizó de manera colaborativa con las siguientes prácticas:
 
 ### Configuración del Proyecto
 
-bash
+```bash
 npm install -g @vue/cli
 npm install -g json-server
 npm install
 npm install bootstrap@5.3.0
-
+```
 
 ### Ejecución en Desarrollo
 
 Terminal 1 - API JSON Server:
-bash
+```bash
 json-server --watch db.json --port 3001
-
+```
 
 Terminal 2 - Aplicación Vue:
-bash
+```bash
 npm run serve
-
+```
 
 ### URLs de Acceso
 
@@ -354,8 +354,8 @@ npm run serve
 - Diseño coherente con identidad de marca
 - Interfaz intuitiva y profesional
 
-
+---
 
 Desarrollado para el Segundo Parcial de Desarrollo de Aplicaciones Web - Implementando modularización, componentización y consumo de APIs externas con Vue.js 3 y Bootstrap 5.3
 
-Proyecto desarrollado colaborativamente por Ariani Navarro y Ana Jaime.
+Proyecto desarrollado colaborativamente por Ariani Navarro y Ana Jaime 
