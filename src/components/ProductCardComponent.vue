@@ -1,3 +1,4 @@
+
 <template>
   <div class="card product-card h-100">
     <img :src="product.imagen" class="card-img-top" :alt="product.nombre" style="height: 200px; object-fit: cover;">
