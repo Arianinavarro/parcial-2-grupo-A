@@ -1,3 +1,4 @@
+<!-- Vista de Gestión de Productos - Implementa estados de carga y validación -->
 <template>
   <div>
     <h2 class="text-purple mb-4">Nuestros Pasteles</h2>
