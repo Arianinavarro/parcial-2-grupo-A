@@ -1,4 +1,5 @@
-<template>
+<!-- Componente Sidebar - Mejoras en navegación y experiencia de usuario -->
+ <template>
   <div class="col-md-3 col-lg-2 bg-light sidebar">
     <div class="position-sticky pt-3">
       <h5 class="text-center text-purple mb-4">Repostería ARI-ANA</h5>
